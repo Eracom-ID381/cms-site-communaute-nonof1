@@ -1,0 +1,41 @@
+@import "_includes/reset.scss";
+@import "_includes/variables.scss";
+@import "_includes/mixins.scss";
+
+header {
+    background: rgba(252, 62, 158);
+    height: 100px;
+    width: 100%;
+}
+
+main {
+    background: rgba(255, 255, 255);
+
+    // ON PEUT CALCULER DES CHOSES EN PURE CSS
+    height: calc(100vh - 100px * 2);
+    
+    // GRID SETTINGS
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    align-items: center;
+    grid-gap: 1rem;
+}
+
+.image-section {
+    padding: 1rem;
+    
+}
+
+.image-section img {
+    width: 100%;
+}
+
+.text-section {
+    padding: 1rem;
+}
+
+footer {
+    background: rgba(252, 62, 158);
+    height: 100px;
+}
