@@ -1,6 +1,11 @@
 @import "_includes/reset.scss";
 @import "_includes/variables.scss";
 @import "_includes/mixins.scss";
+$primary-font: 'Open Sans', sans-serif;
+
+body {
+	font-family: $primary-font;
+}
 
 a {
 	text-decoration: none;
@@ -10,6 +15,10 @@ header {
 	display: grid;
 	grid-template-columns: (6,1fr);
 	grid-auto-rows: auto;
+}
+
+section {
+	height: 100 vh;
 }
 
 .text-middle {
