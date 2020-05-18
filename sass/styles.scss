@@ -2,9 +2,11 @@
 @import "_includes/variables.scss";
 @import "_includes/mixins.scss";
 $primary-font: 'Open Sans', sans-serif;
+$primary-color: black;
 
 body {
 	font-family: $primary-font;
+	color: $color;
 }
 
 a {
