@@ -26,7 +26,19 @@ body {
 	margin-top: 1vw;
 }
 
-footer {}
+footer {
+	object-position: center;
+	text-align: center;
+	margin: 4vh;
+
+	img {
+		padding: 1vh;
+	}
+
+	i {
+		font-size: 2vh;
+	}
+}
 
 header {
 	display: grid;
