@@ -3,14 +3,21 @@
 @import "_includes/mixins.scss";
 $primary-font: 'Open Sans', sans-serif;
 $primary-color: black;
+$nav-hover: #0099ff;
 
 body {
 	font-family: $primary-font;
 	color: $primary-color;
+	margin: 10vw;
 }
 
 a {
 	text-decoration: none;
+	color: black;
+}
+
+a:hover {
+	color: $nav-hover;
 }
 
 header {
@@ -47,10 +54,14 @@ section {
 	grid-column: 6/7;
 }
 
+#recipe {
+	background-image: url("assets/images/paper.png");
+}
+
 .2col {
 	display: grid;
 	grid-template-columns: repeat(2,1fr);
-	grid-template-rows: (1, windowWidth);
+	grid-template-rows: (1, 100vh);
 }
 
 .2col-1 {
@@ -60,5 +71,26 @@ section {
 
 .2col-2 {
 	grid-column: 2/3;
+	grid-row: auto;
+}
+
+.col3 {
+	display: grid;
+	grid-template-columns: repeat(3,1fr);
+	grid-template-rows: (1,100vh);
+}
+
+.col3-1 {
+	grid-column: 1/2;
+	grid-row: auto;
+}
+
+.col3-2 {
+	grid-column: 2/3;
+	grid-row: auto;
+}
+
+.col3-3 {
+	grid-column: 3/4;
 	grid-row: auto;
 }
