@@ -24,6 +24,7 @@ body {
 	margin-left: 4vw;
 	margin-right: 4vw;
 	margin-top: 1vw;
+	z-index: 1;
 }
 
 footer {
@@ -64,6 +65,10 @@ h3 {
 p {
 	font-size: $text-size;
 	text-align: justify;
+}
+
+script {
+	z-index: 0;
 }
 
 section {
