@@ -148,8 +148,7 @@ ul {
 .three-columns {
 	display: grid;
 	grid-template-columns: repeat(3,1fr);
-	grid-template-rows: (1,100vh);
-	object-fit: contain;
+	grid-template-rows: auto;
 }
 
 .three-columns-1 {
